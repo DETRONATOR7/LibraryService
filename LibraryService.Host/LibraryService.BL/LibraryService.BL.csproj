@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryService.DL\LibraryService.DL.csproj" />
+    <ProjectReference Include="..\LibraryService.Models\LibraryService.Models.csproj" />
+    <InternalsVisibleTo Include="LibraryService.Test" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.4.0" />
+  </ItemGroup>
+
+</Project>
